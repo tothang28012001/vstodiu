@@ -28,3 +28,5 @@ yarn-error.log*
 
 # scratch renders — the pipeline in tools/ regenerates these
 /tools/**/out.png
+
+.vercel
