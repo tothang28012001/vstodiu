@@ -149,6 +149,8 @@ export const tamCam: Game = {
           index: '0',
           name: 'Intro — the kitchen',
           role: 'The covered pot, the head, Tấm’s transformation.',
+          image: '/works/tam-cam/acts/intro.webp',
+          imageNote: 'In engine · Tấm, and the pot with the lid still on.',
           body: [
             'The chapter opens in a warm, ordinary world — daylight, a house that behaves. You walk it, you touch things, nothing is wrong.',
             'Then you lift the lid off the pot in the kitchen. The world does not recover from that, and neither does the lighting: from here the sun is a blood moon and the house begins to rot as the night goes on.',
@@ -160,6 +162,8 @@ export const tamCam: Game = {
           index: 'I',
           name: 'Blood — Jar 1',
           role: 'Scrub the blood before the soldiers break in.',
+          image: '/works/tam-cam/acts/blood.webp',
+          imageNote: 'In engine · the altar room, and what has to be gone before the knock.',
           body: [
             'Gameplay: get on your knees and clean, against a clock you cannot see. Two palace guards walk the courtyard outside on their own timing, and the only warning you get is the sound of them getting closer, then the knock.',
             'It is the tale’s first cruelty played back at you. Someone else scrubbed this floor once because you told them to.',
@@ -181,6 +185,8 @@ export const tamCam: Game = {
           index: 'III',
           name: 'Loom — Jar 3',
           role: 'Weave under the judging voice and the needle.',
+          image: '/works/tam-cam/acts/loom.webp',
+          imageNote: 'In engine · the loom, mid-weave.',
           body: [
             'Gameplay: keep the loom running while it talks to you. The loom speaks in the folk tale — a warning to the woman who took Tấm’s place. Here you are that woman, and it is speaking to you by name.',
             'The third jar is here. So is the point where the game stops being a chore list.',
@@ -190,6 +196,8 @@ export const tamCam: Game = {
           index: 'IV',
           name: 'Interlude — Bà Cụ at the door',
           role: 'The persimmon, the face-swap, the faint.',
+          image: '/works/tam-cam/acts/interlude.webp',
+          imageNote: 'In engine · Bà Cụ.',
           body: [
             'No task. An old woman comes to the door with a persimmon, and looks at you a moment too long.',
             'This is the beat where the chapter says out loud what you are, and the face you have been wearing does not hold.',
