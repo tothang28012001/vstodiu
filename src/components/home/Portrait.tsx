@@ -15,7 +15,17 @@ export function Portrait() {
     <section className="border-b border-line">
       <div className="mx-auto grid max-w-shell gap-8 px-5 py-10 md:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] md:gap-14 md:px-8 md:py-14">
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-md border border-line bg-ink-850">
-          {portrait.src ? (
+          {portrait.video ? (
+            <video
+              src={portrait.video}
+              aria-label={portrait.alt}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            />
+          ) : portrait.src ? (
             <Image
               src={portrait.src}
               alt={portrait.alt}

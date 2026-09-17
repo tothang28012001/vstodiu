@@ -29,4 +29,7 @@ yarn-error.log*
 # scratch renders — the pipeline in tools/ regenerates these
 /tools/**/out.png
 
+# large game builds — hosted via GitHub Releases, not in the repo
+public/works/**/*.zip
+
 .vercel

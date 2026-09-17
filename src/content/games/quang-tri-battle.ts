@@ -1,39 +1,38 @@
 import type { Game } from '@/lib/types';
 
-/**
- * Backlog title, and the page says only what exists. C:/Unity/RedRain holds a
- * cast, a weapon library and one map image — there is no Unity project, so
- * nothing here describes systems, timings or tuning.
- *
- * Character images are Blender renders of the source FBX files.
- */
 export const quangTriBattle: Game = {
   slug: 'quang-tri-battle',
   title: 'Quảng Trị Battle',
   logline: 'A multiplayer shooter set at Quảng Trị, based on the film Mưa Đỏ — Red Rain.',
   hook: 'Five soldiers hold the Citadel. Captain Hoàng and his comrades come to take it.',
 
-  status: 'concept',
-  statusNote: 'Backlog. The cast and the arsenal exist; the game does not yet.',
+  status: 'released',
+  statusNote: 'Shipped. Windows build available for download.',
 
   started: '2026',
-  engine: 'Not started',
+  shipped: 'September 2026',
+  engine: 'Unity 6 · URP',
   genre: 'Multiplayer shooter',
-  format: 'Team versus team',
-  platforms: ['PC target'],
+  format: '5v5 · Attack/Defend',
+  platforms: ['Windows'],
 
-  role: ['Concept, casting and art direction'],
+  role: ['Solo developer — design, code, networking, art direction, release'],
   disclosure:
     'Characters are AI-generated, rendered here in Blender. Weapons and vehicles are third-party assets. Nothing is hand-modelled.',
 
-  showStanding: false,
   accent: '#8C9A5B',
-  cover: '/works/quang-tri-battle/roster.webp',
-  hero: { src: '/works/quang-tri-battle/roster.webp', fit: 'contain', position: 'center 88%' },
+  cover: '/works/quang-tri-battle/cover.png',
+  hero: { src: '/works/quang-tri-battle/cover.png', fit: 'cover' },
   showcase: { src: '/works/quang-tri-battle/scene.webp', note: 'The squad at the Citadel', fit: 'cover' },
   banner: { src: '/works/quang-tri-battle/scene.webp', note: 'The squad at the Citadel' },
 
-  links: [],
+  links: [
+    {
+      label: 'Download for Windows (v0.1.0)',
+      href: '/works/quang-tri-battle/TheBattleBe4QuangTri_v0.1.0_Windows.zip',
+      kind: 'play',
+    },
+  ],
   metrics: [],
 
   blocks: [

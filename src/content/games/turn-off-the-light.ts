@@ -98,8 +98,8 @@ export const turnOffTheLight: Game = {
           index: 'R1',
           name: 'The Bathroom',
           role: 'Chores: Pee · Brush your teeth',
-          image: '/works/turn-off-the-light/04-your-job.png',
-          imageNote: 'YOUR JOB — the objective panel, showing the room’s chores before the stage conditions.',
+          image: '/works/turn-off-the-light/09-bathroom.png',
+          imageNote: 'The bathroom, lights on — tub, sink and the hidden switch by the mirror.',
           body: [
             'Two minigames: a toilet aim game and a tooth-scrubbing game. The bathroom is the one room whose light switch is hidden until both chores are done — it is physically revealed on completion, so the player cannot skip ahead.',
             'The other three rooms invert this: their chore is itself reaching the switch, so finishing the puzzle and finding the switch are the same event.',
@@ -112,6 +112,8 @@ export const turnOffTheLight: Game = {
           index: 'R2',
           name: 'The Kitchen',
           role: 'Chore: Cook Dad’s noodles',
+          image: '/works/turn-off-the-light/06-kitchen.png',
+          imageNote: 'The kitchen, lights on — the pot prompt before the noodles minigame starts.',
           body: [
             'A cooking minigame with a pot, a fridge, a shelf of ingredients and a finished bowl. Ingredients are carried one at a time.',
             'Dad has already gone back to bed. The child is cooking for someone who is not waiting up.',
@@ -121,6 +123,8 @@ export const turnOffTheLight: Game = {
           index: 'R3',
           name: 'The Living Room',
           role: 'Chore: Put the tape in and watch it',
+          image: '/works/turn-off-the-light/07-living-room.png',
+          imageNote: 'The living room, lights on — the VHS player, the sofa, the wall calendar.',
           body: [
             'A VHS tape, a player, and a movie that has to run. The chore is not a puzzle so much as an obligation to sit still and watch something to the end.',
             'There is also a wall calendar in here, and a calendar unlocker. The room is where the game starts telling you when you are, rather than where.',
@@ -132,6 +136,8 @@ export const turnOffTheLight: Game = {
           index: 'R4',
           name: 'The Garage',
           role: 'Chore: Get the garage door open',
+          image: '/works/turn-off-the-light/08-garage.png',
+          imageNote: 'The garage, lights on — the car, the workbench, the door still closed.',
           body: [
             'A puzzle room, and the only room whose light controller does not exist until the puzzle is solved — it is created at runtime once the door opens.',
             'The garage is also the one place the game offers a way out that is not a light switch. There is a car.',

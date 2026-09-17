@@ -13,11 +13,12 @@ export const studio = {
   ],
 
   /**
-   * Top-of-page portrait. Leave `src` undefined and the slot renders as an
-   * empty plate — drop a photo in `public/host/portrait.jpg` and set it here.
+   * Top-of-page portrait. Leave both `src` and `video` undefined and the slot
+   * renders as an empty plate. `video` takes priority over `src` when both are set.
    */
   portrait: {
     src: undefined as string | undefined,
+    video: '/host/avatar.mp4' as string | undefined,
     alt: 'To, developer at Vstodiu',
   },
 
