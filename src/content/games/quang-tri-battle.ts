@@ -29,7 +29,7 @@ export const quangTriBattle: Game = {
   links: [
     {
       label: 'Download for Windows (v0.1.0)',
-      href: '/works/quang-tri-battle/TheBattleBe4QuangTri_v0.1.0_Windows.zip',
+      href: 'https://github.com/tothang28012001/vstodiu/releases/download/v0.1.0/TheBattleBe4QuangTri_v0.1.0_Windows.zip',
       kind: 'play',
     },
   ],
