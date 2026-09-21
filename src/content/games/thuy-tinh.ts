@@ -14,7 +14,17 @@ export const thuyTinh: Game = {
   hook: 'You are the god who came second. The myth already knows how this ends — you have one night to argue with it.',
 
   status: 'concept',
-  statusNote: 'Backlog. Cast designed; the game is not started.',
+  statusNote: 'Backlog. The full cast is modelled; nothing else is built yet.',
+
+  tracks: [
+    { name: 'Cast — gods, king, three tributes', pct: 90, weight: 2 },
+    { name: 'Concept, story and art direction', pct: 60, weight: 1 },
+    { name: 'The delta — open world build', pct: 0, weight: 4 },
+    { name: 'Traversal, water and combat systems', pct: 0, weight: 3 },
+    { name: 'Quest design — the three tributes', pct: 0, weight: 2 },
+  ],
+  progressNote:
+    'All seven characters are modelled, rigged and exported — both gods, the princess, the king and the three tributes. Nothing else exists: no world, no systems, no quests. The streams that gate a playable build are weighted above the art so a finished cast cannot make a title that has not started look like one in production.',
 
   started: '2026',
   engine: 'Not started',

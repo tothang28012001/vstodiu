@@ -3,10 +3,11 @@ import { STATUS_META } from '@/lib/types';
 import { turnOffTheLight } from './turn-off-the-light';
 import { tamCam } from './tam-cam';
 import { quangTriBattle } from './quang-tri-battle';
+import { untitledCoop } from './untitled-co-op';
 import { thuyTinh } from './thuy-tinh';
 
 /** Slate order: what ships first is what matters first. */
-export const games: Game[] = [turnOffTheLight, tamCam, quangTriBattle, thuyTinh];
+export const games: Game[] = [turnOffTheLight, tamCam, quangTriBattle, untitledCoop, thuyTinh];
 
 export function getGame(slug: string): Game | undefined {
   return games.find((g) => g.slug === slug);
