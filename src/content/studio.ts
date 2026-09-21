@@ -42,16 +42,16 @@ export const studio = {
    */
   capabilities: [
     { k: 'Engine', v: 'Unity 6', sub: 'URP · 2D and 3D' },
-    { k: 'Code', v: 'C#', sub: '156 scripts shipped or in dev' },
+    { k: 'Code', v: 'C#', sub: '156 scripts across the shipped titles' },
     { k: 'Tech art', v: 'Blender', sub: 'Python rigging · animation' },
-    { k: 'Shipped', v: '1', sub: 'public and playable' },
+    { k: 'Shipped', v: '3', sub: 'public and playable' },
   ],
 
   /** Longer-form, for the Studio page. */
   practice: [
-    { k: 'Engines', v: 'Unity 6 · URP — one title shipped, one in development' },
+    { k: 'Engines', v: 'Unity 6 · URP — three titles shipped' },
     { k: 'Disciplines', v: 'Systems design · gameplay code (C#) · Blender technical art · narrative' },
-    { k: 'Shipped', v: '1 title, public and playable' },
+    { k: 'Shipped', v: '3 titles, public and playable' },
     { k: 'On AI', v: 'Used for base meshes and code assistance, disclosed per project' },
     { k: 'Working language', v: 'English · Vietnamese' },
   ],
@@ -72,7 +72,7 @@ export const studio = {
     /** Advanced by click, or on a timer. Keep each line under ~110 characters. */
     script: [
       "Hi — I'm To. I make games on my own, under the name Vstodiu.",
-      'One shipped, one in production, two on paper. The numbers below are not rounded up.',
+      'Three shipped, one on paper. The numbers below are not rounded up.',
       'Pick any game to see what I actually built.',
     ],
   },

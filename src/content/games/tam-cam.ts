@@ -14,23 +14,15 @@ export const tamCam: Game = {
     'You play Cám, wearing her stepsister’s face. The house knows. Chapter one is called Four Jars, and you are gathering them.',
   hook: 'Denial relieves. Mercy costs. The game makes cruelty the comfortable option, then watches what you do.',
 
-  status: 'production',
-  statusNote: 'Chapter 1 in development. Systems and act flow implemented; art and audio behind.',
-  tracks: [
-    { name: 'Core systems (Dread / Reality / Recognition)', pct: 70, weight: 3 },
-    { name: 'Act flow & encounters', pct: 55, weight: 4 },
-    { name: 'Character rigs & animation', pct: 50, weight: 2 },
-    { name: 'Environment art', pct: 25, weight: 3 },
-    { name: 'Audio', pct: 15, weight: 2 },
-  ],
-  progressNote:
-    'Measured against Chapter 1 — “Bốn Cái Hũ” (Four Jars) — not a finished game. 82 C# scripts (52 runtime, 30 editor) with a service locator, an event bus and a unit-test assembly are in; the house they run in is blocked out rather than dressed. Weighted towards the streams that gate a playable chapter, so finished art cannot inflate the figure.',
+  status: 'released',
+  statusNote: 'Chapter 1 shipped. Free on itch.io for Windows.',
 
   started: '2026',
+  shipped: 'September 2026',
   engine: 'Unity 6 · URP',
   genre: 'Psychological horror',
   format: 'Single-player · third-person · chaptered',
-  platforms: ['PC'],
+  platforms: ['Windows'],
 
   role: [
     'Design and code — 82 C# scripts (52 runtime, 30 editor tooling), service-locator architecture, event bus, unit-tested systems',
@@ -51,7 +43,13 @@ export const tamCam: Game = {
   },
   hero: { src: '/works/tam-cam/hero.png', fit: 'cover', position: 'center 45%' },
 
-  links: [],
+  links: [
+    {
+      label: 'Play free on itch.io',
+      href: 'https://tothang28012001.itch.io/tamcam',
+      kind: 'play',
+    },
+  ],
   banner: { src: '/works/tam-cam/scene.webp', note: 'In engine · the house, Act I' },
 
   metrics: [
@@ -220,14 +218,15 @@ export const tamCam: Game = {
       label: 'Status',
       heading: 'Status sheet',
       rows: [
-        ['State', 'Chapter 1 in development — systems in, environment art behind'],
+        ['State', 'Chapter 1 released — the chapter is playable end to end; the story continues'],
         ['Engine', 'Unity 6 (6000.2.9f1) · URP'],
         ['Architecture', 'Service locator · event bus · state machine · test assembly'],
         ['Format', 'Single-player · third-person · 3D'],
         ['Source', 'Vietnamese folklore — Tấm Cám, played as Cám'],
         ['Scene', 'Nhà Ba Gian — the traditional three-compartment house'],
-        ['Release', 'To be announced'],
-        ['Platform', 'PC'],
+        ['Release', 'September 2026 — free on itch.io'],
+        ['Build', 'TamCamTheUntold 1.0.0 — 331 MB'],
+        ['Platform', 'Windows'],
       ],
     },
   ],
