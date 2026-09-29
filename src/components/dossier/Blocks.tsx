@@ -1,6 +1,7 @@
 import type { Block, Ending, RoadmapColumn, Shot, Stage, SystemEntry } from '@/lib/types';
 import { ModelCard } from './ModelCard';
 import { CastRow } from './CastRow';
+import { StoryBeats } from './StoryBeats';
 import { SpoilerGate } from './SpoilerGate';
 import { Reveal } from '@/components/motion/Reveal';
 
@@ -347,6 +348,13 @@ export function BlockView({ block, pixelated }: { block: Block; pixelated?: bool
       return (
         <Section {...shell}>
           <Gallery items={block.items} pixelated={pixelated} />
+        </Section>
+      );
+
+    case 'story':
+      return (
+        <Section {...shell}>
+          <StoryBeats items={block.items} />
         </Section>
       );
 

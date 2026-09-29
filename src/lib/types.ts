@@ -96,6 +96,26 @@ export type SystemEntry = {
 
 export type Shot = { src: string; caption: string; note?: string };
 
+/**
+ * One frame of a picture-led plot summary: read top to bottom, the frames alone
+ * should tell a stranger what the game is.
+ */
+export type Beat = {
+  /** Chapter tag, e.g. '02 · The Festival'. A heading is shown each time it changes. */
+  chapter: string;
+  title: string;
+  caption: string;
+  /** The concept frame — the picture that carries the story. */
+  board: string;
+  /** Tag on `board`, so concept art is never mistaken for the game. */
+  boardLabel: string;
+  /** The same shot as it is actually built, shown as a swappable inset. */
+  built?: string;
+  builtLabel?: string;
+  /** Labels for the two halves of a split-screen frame, left then right. */
+  sides?: [string, string];
+};
+
 export type RoadmapColumn = {
   state: 'built' | 'building' | 'planned' | 'excluded';
   items: string[];
@@ -117,6 +137,7 @@ export type Block =
       side?: string;
     })
   | (BlockBase & { kind: 'gallery'; items: Shot[] })
+  | (BlockBase & { kind: 'story'; items: Beat[] })
   | (BlockBase & { kind: 'roadmap'; columns: RoadmapColumn[] })
   | (BlockBase & { kind: 'table'; rows: [string, string][] })
   | (BlockBase & { kind: 'log'; entries: LogEntry[] });
